@@ -1,0 +1,124 @@
+nohup: ignoring input
+Watching for file changes with StatReloader
+/home/user/miniconda3/envs/rag/lib/python3.10/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Unauthorized: /api/auth/user/
+[21/Nov/2025 17:01:28] "GET /api/auth/user/ HTTP/1.0" 401 49
+[21/Nov/2025 17:01:40] "POST /api/auth/login/ HTTP/1.0" 200 197
+[21/Nov/2025 17:01:40] "GET /api/knowledge-bases/ HTTP/1.0" 200 861
+[21/Nov/2025 17:01:40] "GET /api/chat/sessions/ HTTP/1.0" 200 249
+[21/Nov/2025 17:01:41] "GET /api/chat/sessions/d8493c53-cb8e-42ae-9c6f-63028d2b2bb8/messages/ HTTP/1.0" 200 3476
+[21/Nov/2025 17:03:35] "POST /api/qa/ask/ HTTP/1.0" 200 3406
+[21/Nov/2025 17:03:39] "GET /api/health/ HTTP/1.0" 200 93
+[21/Nov/2025 17:03:40] "GET /api/chunkers/ HTTP/1.0" 200 5394
+[21/Nov/2025 17:03:40] "GET /api/auth/user/ HTTP/1.0" 200 158
+[21/Nov/2025 17:04:06] "POST /api/knowledge-bases/create/ HTTP/1.0" 200 332
+[21/Nov/2025 17:04:07] "POST /api/chunk/ HTTP/1.0" 200 76352
+[21/Nov/2025 17:04:10] "GET /api/auth/user/ HTTP/1.0" 200 158
+[21/Nov/2025 17:04:10] "GET /api/knowledge-bases/ HTTP/1.0" 200 1151
+[21/Nov/2025 17:04:10] "GET /api/chat/sessions/ HTTP/1.0" 200 249
+[21/Nov/2025 17:04:10] "GET /api/chat/sessions/d8493c53-cb8e-42ae-9c6f-63028d2b2bb8/messages/ HTTP/1.0" 200 6921
+正在加载环境变量文件: /vda/rag/text-spilterV9/backend/.env
+文件是否存在: True
+API Key 是否加载: 是
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 21, 2025 - 16:52:03
+Django version 5.2.7, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+
+🔍 查询文本: 退役军人服务一件事服务设定依据是什么?
+--- 编码 API 调用 ---
+模型: tongyi-embedding-vision-plus
+输入内容 (前100字符): ['退役军人服务一件事服务设定依据是什么?']...
+✅ 查询文本编码成功，向量维度: 1152
+📚 检索到 5 条相关内容:
+
+  [1] 相似度: 0.7298
+      文档ID: 退役军人一件事答疑解惑.pdf_chunk_10
+      内容: 问：退役军人服务一件事服务设定依据是什么?
+答：关于印发《“军人退役一件事”工作方案》的通知，甘退役军人发【2024】43号。
+      元数据: {'chunker_type': 'qa', 'file_name': '退役军人一件事答疑解惑.pdf', 'source_filename': 'tmp9fq6h06f.pdf', 'modality_type': 'text', 'source_file': 'C:\\Users\\RmmR\\AppData\\Local\\Temp\\tmp9fq6h06f.pdf', 'intro': '退役军人服务一件事', 'chunk_id': 10}
+
+  [2] 相似度: 0.7298
+      文档ID: 退役军人一件事答疑解惑.pdf_chunk_18
+      内容: 问：退役军人服务一件事服务设定依据是什么?
+答：关于印发《“军人退役一件事”工作方案》的通知，甘退役军人发【2024】43号。
+      元数据: {'intro': '退役军人服务一件事', 'file_name': '退役军人一件事答疑解惑.pdf', 'chunk_id': 18, 'chunker_type': 'qa', 'source_filename': 'tmp9fq6h06f.pdf', 'modality_type': 'text', 'source_file': 'C:\\Users\\RmmR\\AppData\\Local\\Temp\\tmp9fq6h06f.pdf'}
+
+  [3] 相似度: 0.6889
+      文档ID: 退役军人一件事答疑解惑.pdf_chunk_1
+      内容: 问：1.问:退役军人服务一件事服务设定依据是什么?
+答：关于印发《“军人退役一件事”工作方案》的通知，甘退役军人发【2024】43号。
+      元数据: {'modality_type': 'text', 'source_file': 'C:\\Users\\RmmR\\AppData\\Local\\Temp\\tmp9fq6h06f.pdf', 'chunker_type': 'qa', 'chunk_id': 1, 'source_filename': 'tmp9fq6h06f.pdf', 'intro': '退役军人服务一件事', 'file_name': '退役军人一件事答疑解惑.pdf'}
+
+  [4] 相似度: 0.6413
+      文档ID: 退役军人一件事答疑解惑.pdf_chunk_2
+      内容: 问：.问:退役军人服务“一件事”受理条件是什么?
+答：退役军人服务“一件事”中自主就业退役士兵退役报到、自主就业退役士兵一次性经济
+补助金的给付、自主就业退役士兵教育培训和就业创业政策咨询的条件为本年度退出现役的
+义务兵和服现役不满12年的士官。
+      元数据: {'source_filename': 'tmp9fq6h06f.pdf', 'file_name': '退役军人一件事答疑解惑.pdf', 'modality_type': 'text', 'chunker_type': 'qa', 'intro': '退役军人服务一件事', 'source_file': 'C:\\Users\\RmmR\\AppData\\Local\\Temp\\tmp9fq6h06f.pdf', 'chunk_id': 2}
+
+  [5] 相似度: 0.6227
+      文档ID: 退役军人一件事答疑解惑.pdf_chunk_19
+      内容: 问：退役军人服务“一件事”受理条件是什么?
+答：本年度退出现役的义务兵和服现役不满12年的士官。
+      元数据: {'source_filename': 'tmp9fq6h06f.pdf', 'intro': '退役军人服务一件事', 'chunk_id': 19, 'modality_type': 'text', 'chunker_type': 'qa', 'source_file': 'C:\\Users\\RmmR\\AppData\\Local\\Temp\\tmp9fq6h06f.pdf', 'file_name': '退役军人一件事答疑解惑.pdf'}
+
+🔍 查询文本: 退役军人服务一件事服务设定依据是什么?
+--- 编码 API 调用 ---
+模型: tongyi-embedding-vision-plus
+输入内容 (前100字符): ['退役军人服务一件事服务设定依据是什么?']...
+✅ 查询文本编码成功，向量维度: 1152
+⚠️ 未检索到相关内容
+已生成问答对：/tmp/tmp9y3hcxs1.jsonl，共 28 组
+sk-a8501b80aaff42dc9f034f35f0d12ed3
+开始处理 28 个分块...
+--- 编码 API 调用 ---
+模型: tongyi-embedding-vision-plus
+输入内容 (前100字符): [{'text': '问：问题一：今年我区小学招生的时间是如何安排的？\n答：今年城关区小学招生工作的日程安排为：\n（一）7月4-8日 适龄儿童监护人提交网络入学申请；\n（二）7月5-9日 学校在...
+--- 编码 API 调用 ---
+模型: tongyi-embedding-vision-plus
+输入内容 (前100字符): [{'text': '问：问题一：我已经参加了城关区6月24-25日的预报名工作，是否就不用参加7月4日开始的网络入学申请工作了？\n答：6月24-25日的预报名工作仅仅是一次招生系统的公开测试，目的...
+--- 编码 API 调用 ---
+模型: tongyi-embedding-vision-plus
+输入内容 (前100字符): [{'text': '问：问题一：在网络入学申请注册阶段，填错了孩子的姓名、身份证号码、电话号码怎么办？\n答：注册阶段出现的错误，是无法自行修改的，儿童监护人可在7月8日前，携带儿童的户口簿到城关区...
+编码完成，成功编码 28 个分块
+成功保存 28 个向量到 Chroma 数据库
+
+🔍 查询文本: 今年我区小学招生的时间是如何安排的？
+--- 编码 API 调用 ---
+模型: tongyi-embedding-vision-plus
+输入内容 (前100字符): ['今年我区小学招生的时间是如何安排的？']...
+✅ 查询文本编码成功，向量维度: 1152
+📚 检索到 5 条相关内容:
+
+  [1] 相似度: 0.5212
+      文档ID: 教育入学一件事问题解答.docx_chunk_1
+      内容: 问：问题一：今年我区小学招生的时间是如何安排的？
+答：今年城关区小学招生工作的日程安排为：
+（一）7月4-8日 适龄儿童监护人提交网络入学申请；
+（二）7月5-9日 学校在网上审核适龄儿童入学申请；
+（三）7月12-15日 学校现场审核入学材料；
+（四）7月19-21日 学校开展录取、调配工作；
+（五）7月22日 新生到校注册报名。
+      元数据: {'intro': '2024年城关区小学一年级新生招生工作即将开始了，现在对广大适龄儿童家长比较关心的问题进行解答，供大家参考。\n第一部分', 'chunk_id': 1, 'source_file': '/tmp/tmps7aoml0h.docx', 'source_filename': 'tmps7aoml0h.docx', 'chunker_type': 'qa', 'file_name': '教育入学一件事问题解答.docx', 'modality_type': 'text'}
+
+  [2] 相似度: 0.4077
+      文档ID: 教育入学一件事问题解答.docx_chunk_11
+      内容: 问：问题一：我已经参加了城关区6月24-25日的预报名工作，是否就不用参加7月4日开始的网络入学申请工作了？
+答：6月24-25日的预报名工作仅仅是一次招生系统的公开测试，目的是为了及时发现“小学入学网络申请系统”的不足，完善系统的设置，提升用户体验；同时帮助儿童家长尽快了解网络入学申请流程，熟悉网络申请系统环境，提前准备各类入学资料。预报名期间产生的信息将在正式的入学申请工作开始前全部清空，不会对儿童入学产生任何影响。因此所有打算在城关区入学的儿童，必须要参加7月4日开始的网络入学申请工作。
+      元数据: {'chunker_type': 'qa', 'chunk_id': 11, 'file_name': '教育入学一件事问题解答.docx', 'intro': '2024年城关区小学一年级新生招生工作即将开始了，现在对广大适龄儿童家长比较关心的问题进行解答，供大家参考。\n第一部分', 'source_filename': 'tmps7aoml0h.docx', 'source_file': '/tmp/tmps7aoml0h.docx', 'modality_type': 'text'}
+
+  [3] 相似度: 0.3778
+      文档ID: 教育入学一件事问题解答.docx_chunk_7
+[21/Nov/2025 17:04:28] "POST /api/qa/ask/ HTTP/1.0" 200 6148
+正在加载环境变量文件: /vda/rag/text-spilterV9/backend/.env
+文件是否存在: True
+API Key 是否加载: 是
